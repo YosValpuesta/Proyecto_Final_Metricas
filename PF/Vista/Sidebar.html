@@ -1,0 +1,79 @@
+<ul class="navbar-nav sidebar-dark sidebar accordion" id="accordionSidebar" style="background-color: #2d3033;">
+    <br>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="indexPF.php">
+        <div class="sidebar-brand-icon">
+            <img src="../../assets/img/CorsolaCorp.jpg" height="55px">
+        </div>
+        <div class="sidebar-brand-text mx-2">CorsolaCorp</div>
+    </a>
+    <br>
+    <hr class="sidebar-divider my-0">
+    <li class="nav-item">
+        <a class="nav-link" href="1Requisitos.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Requisitos</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="2Complejidad.php">
+            <i class="fa-solid fa-clipboard"></i>
+            <span>Complejidad</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="3PFSA.php"></i>
+            <i class="fas fa-fw fa-table"></i>
+            <span>PFSA</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="4FactorAjuste.php">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Factor ajuste</span>
+        </a>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item">
+        <a class="nav-link" href="5Estimaciones.php">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Estimaciones</span>
+        </a>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item">
+        <a class="nav-link" href="#" id="btnDescargarPDF">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Descargar Manual PDF</span>
+        </a>
+    </li>
+    <hr class="sidebar-divider d-none d-md-block">
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../assets/js/sb-admin-2.min.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>
+
+<!-- Descarga de documento PDF -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const btnDescargarPDF = document.getElementById("btnDescargarPDF");
+        btnDescargarPDF.addEventListener("click", function() {
+            const urlPDF = "../../assets/manual/Manual de UsuarioAPF.pdf";
+            // Crea un enlace invisible para descargar el PDF
+            const linkDescarga = document.createElement("a");
+            linkDescarga.href = urlPDF;
+            // Nombre del archivo a descargar
+            linkDescarga.download = "PlanEstudios.pdf";
+            linkDescarga.style.display = "none";
+            document.body.appendChild(linkDescarga);
+            // Simula un clic en el enlace para iniciar la descarga
+            linkDescarga.click();
+            // Elimina el enlace después de la descarga
+            document.body.removeChild(linkDescarga);
+        });
+    });
+</script>

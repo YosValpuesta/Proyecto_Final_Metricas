@@ -1,0 +1,61 @@
+<ul class="navbar-nav sidebar-dark sidebar accordion" id="accordionSidebar" style="background-color: #2d3033;">
+    <br>
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="indexMA.php">
+        <div class="sidebar-brand-icon">
+            <img src="../../assets/img/CorsolaCorp.jpg" height="55px">
+        </div>
+        <div class="sidebar-brand-text mx-2">CorsolaCorp</div>
+    </a>
+    <br>
+    <hr class="sidebar-divider my-0">
+    <li class="nav-item">
+        <a class="nav-link" href="indexMA.php">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="backlog.php">
+            <i class="fa-solid fa-clipboard"></i>
+            <span>Backlog</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="kanban.php">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Tablero Kanban</span>
+        </a>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+            aria-expanded="true" aria-controls="collapseUtilities">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Métricas</span>
+        </a>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-0 collapse-inner rounded">
+                <a class="collapse-item" href="WIP.php">WIP</a>
+            </div>
+        </div>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-0 collapse-inner rounded">
+                <a class="collapse-item" href="leadTimeGrafica.php">Lead Time</a>
+            </div>
+        </div>
+        <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+            <div class="bg-white py-0 collapse-inner rounded">
+                <a class="collapse-item" href="CycleTimeGrafica.php">Cycle Time</a>
+            </div>
+        </div>
+    </li>
+    <hr class="sidebar-divider d-none d-md-block">
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div>
+</ul>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../../assets/js/sb-admin-2.min.js"></script>
+<script src="../../assets/js/jquery.min.js"></script>
+<script src="../../assets/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,21 @@
+body {
+    background-color: #2d3033;
+}
+
+.card {
+    background-color: #d4dde1;
+    border-radius: 25px;
+    border: none;
+    color: black;
+}
+
+/* Botones login */
+#iniciar{
+    background-color: #aa4b41;
+    color: white;
+}
+
+#registro{
+    background-color: #335252;
+    color: white;
+}

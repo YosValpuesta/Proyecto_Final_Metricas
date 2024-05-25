@@ -1,0 +1,42 @@
+/* Contenedor */
+#backlog {
+    background-color: aliceblue;
+    padding: 2%;
+    border-radius: 25px;
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+/* Enlaces */
+a {
+    color: #d0e1f9;
+}
+
+a:hover {
+    color: #1e1f26;
+}
+
+/* HU */
+#HU {
+    background-color: #00293c;
+    color: white;
+    border-color: d0e1f9;
+}
+
+/* Boton nueva HU */
+#agregarHU {
+    background-color: #283655;
+}
+
+.modal-content {
+    background-color: #d4dde1;
+}
+
+h5 {
+    color: black;
+}
+
+#insertarHU {
+    background-color: #1e1f26;
+    color: aliceblue;
+}
